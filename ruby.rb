@@ -35,27 +35,43 @@ def remove_vowels(str)
 end
 p remove_vowels(no_vowels)
 
-# # 4. Look at this horrible Ruby code. Fix it to be good Ruby code.
+# 4. Look at this horrible Ruby code. Fix it to be good Ruby code.
 
-# class example
-#   constructor(day)
-#     @day=day
-#   end
+class Example
+  def initialize(day)
+    @day=day
+  end
 
-#   def SayHi
-#     if(day === "Friday"){
-#       puts "TGIF!"
-#     }
-#     else if(day === "Monday"){
-#       puts "Its monday again"
-#     }
-#     else{
-#       puts "another day"
-#     }
-# end
+  def say_hi
+    if(@day === "Friday")
 
-# # 5a. Create a class called Animal that initializes with a color. Create a method in the class called legs that returns 4.
+      puts "TGIF!"
+    
+    elsif(@day === "Monday")
+
+      puts "Its monday again"
+  
+    else
+
+      puts "another day"
+    end
+  end
+end
+monday = Example.new('Monday')
+monday.say_hi
+# 5a. Create a class called Animal that initializes with a color. Create a method in the class called legs that returns 4.
+class Animal
+  def initialize(color)
+    @color = color 
+  end 
+
+  def legs
+    return 4
+  end
+end
 
 
 
-# # 5b. Create a new instance of an Animal with a brown color. Return how the number of legs for the animal object.
+# 5b. Create a new instance of an Animal with a brown color. Return how the number of legs for the animal object.
+dog = Animal.new("brown")
+p dog.legs
