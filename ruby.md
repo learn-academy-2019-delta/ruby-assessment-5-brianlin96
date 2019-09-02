@@ -5,41 +5,42 @@ Answer the following questions. First, without external resources. Challenge you
 
 1. In what ways are JavaScript and Ruby similar? In what ways are they different?
 
-  Your answer:
+  Your answer: Both are loosely typed, object oriented languages. Ruby has less falsy values since there is no type coercion. JS is mainly frontend as it can be used with React and Ruby is more backend because it can be used with Rails.
 
-  Researched answer:
+  Researched answer: Both are object oriented, dynamic, scripting languages. Ruby has simpler variable declaration while JS needs var, const, or let. JS is frontend while Ruby is backend. JS is faster than Ruby due to the fact that it has a more optimized enginge. JS is more scaleable than Ruby
 
 
 
 2. What is a hash?
 
-  Your answer:
+  Your answer: A hash is a dictionary or an object. It has key value pairs and can store them
 
-  Researched answer:
+  Researched answer: A Hash is a dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.
 
 
 
 3. What is the testing framework used in Ruby? Describe the process of setting up the testing environment.
 
-  Your answer:
+  Your answer: RSPEC. You need to install the RPSEC gem, require RSPEC in your file then run it in your terminal through RSPEC file_name
 
-  Researched answer:
-
+  Researched answer: RSpec is a 'Domain Specific Language' (DSL) testing tool written in Ruby to test Ruby code.[4] It is a behavior-driven development (BDD) framework which is extensively used in production applications.
 
 
 4. Name three possible relationships between objects?
 
-  Your answer:
+  Your answer: parent, child, sibling
 
-  Researched answer:
+  Researched answer: parent, child, sibling
 
 
 
 5. What is an instance variable? How is it different from other variables in Ruby?
 
-  Your answer:
+  Your answer: @variable_name. It belongs to the instance of an object that is created and is only availible in that scope
 
-  Researched answer:
+  Researched answer: An instance variable has a name beginning with @, and its scope is confined to whatever object self refers to. Two different objects, even if they belong to the same class, are allowed to have different values for their instance variables. From outside the object, instance variables cannot be altered or even observed (i.e., ruby's instance variables are never public) except by whatever methods are explicitly provided by the programmer. As with globals, instance variables have the nil value until they are initialized.
+
+
 
 
 
@@ -51,15 +52,16 @@ Answer the following questions. First, without external resources. Challenge you
 
 Choose one of these resources and look through the material for 10-15 min. List three new things you learned about Ruby:
 
-1)
+1) Use only spaces for indentation. No hard tabs.
 
-2)
+2) Use spaces around operators, after commas, colons and semicolons. Whitespace might be (mostly) irrelevant to the Ruby interpreter, but its proper use is the key to writing easily readable code.
 
-3)
+
+3) Use empty lines between method definitions and also to break up methods into logical paragraphs internally.
 
 
 7. Stretch: What are blocks, procs, and lambdas?
 
-  Your answer:
+  Your answer: ?
 
-  Researched answer:
+  Researched answer: In Ruby, blocks are snippets of code that can be created to be executed later. Blocks are passed to methods that yield them within the do and end keywords. A “proc” is an instance of the Proc class, which holds a code block to be executed, and can be stored in a variable. To create a proc, you call Proc.new and pass it a block. Lambdas are essentially procs with some distinguishing factors. They are more like “regular” methods in two ways: they enforce the number of arguments passed when they’re called and they use “normal” returns.
